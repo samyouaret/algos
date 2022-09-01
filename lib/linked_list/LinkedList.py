@@ -13,4 +13,12 @@ class LinkedList:
         self.head = None
 
     def add(self, value):
-        self.head = LinkedListNode(value)
+        # 1. the list is empty
+        if self.head == None:
+            self.head = LinkedListNode(value)
+            return
+        # 2. list is not empty, insert at last
+        temp = self.head
+        while (temp.next != None):
+            temp = temp.next
+        temp.next = LinkedListNode(value)
