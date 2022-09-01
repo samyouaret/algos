@@ -1,5 +1,6 @@
-# algos
-A simple algorithms and data strecture implementation and guides.
+# Algos
+
+A simple repository that contains algorithms and data structures implementation and guides in `Python`.
 
 ## Running tests
 
