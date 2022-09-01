@@ -15,7 +15,3 @@ class LinkedListTest(unittest.TestCase):
         list.add(2)
         assert list.head.value == 1
         assert list.head.next.value == 2
-
-
-if __name__ == '__main__':
-    unittest.main()
