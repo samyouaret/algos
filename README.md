@@ -4,7 +4,7 @@ A simple repository that contains algorithms and data structures implementation 
 
 ## Running tests
 
-    python3 -m unittest tests.linked_list.linked_list
+    python3 -m unittest discover -p 'test_*.py'
 
 Or just 
 
