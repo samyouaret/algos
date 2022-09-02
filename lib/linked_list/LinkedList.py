@@ -11,6 +11,7 @@ class LinkedList:
 
     def __init__(self):
         self.head = None
+        self.current = None
 
     def add(self, value):
         # 1. the list is empty
@@ -22,3 +23,16 @@ class LinkedList:
         while (temp.next != None):
             temp = temp.next
         temp.next = LinkedListNode(value)
+
+    def __iter__(self):
+        self.current = self.head
+
+        return self
+
+    def __next__(self):
+        if (self.current == None):
+            raise StopIteration
+        val = self.current.value
+        self.current = self.current.next
+
+        return val
