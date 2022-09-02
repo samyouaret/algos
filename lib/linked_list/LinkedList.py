@@ -36,3 +36,10 @@ class LinkedList:
         self.current = self.current.next
 
         return val
+
+    def __str__():
+        list = []
+        for value in list:
+            list.append(value)
+
+        return list.__str__()
