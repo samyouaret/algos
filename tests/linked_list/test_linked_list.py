@@ -25,3 +25,11 @@ class LinkedListTest(unittest.TestCase):
             result.append(value)
 
         assert sorted(result) == sorted(list)
+
+    def test_pop_value_when_list_not_empty(self):
+        list = LinkedList()
+        list.add(1)
+        list.add(2)
+        val = list.pop()
+        assert val == 2
+        assert list.head.next == None

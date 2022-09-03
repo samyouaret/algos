@@ -24,6 +24,15 @@ class LinkedList:
             temp = temp.next
         temp.next = LinkedListNode(value)
 
+    ## buggy
+    def pop(self):
+        temp = self.head
+        while (temp.next != None):
+            temp = temp.next
+        value = temp.next.value
+        temp.next = None
+        return value
+
     def __iter__(self):
         self.current = self.head
 
