@@ -33,3 +33,10 @@ class LinkedListTest(unittest.TestCase):
         val = list.pop()
         assert val == 2
         assert list.head.next == None
+
+    def test_pop_value_when_list_has_one_value(self):
+        list = LinkedList()
+        list.add(1)
+        val = list.pop()
+        assert val == 1
+        assert list.head == None
