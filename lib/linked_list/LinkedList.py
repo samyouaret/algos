@@ -33,7 +33,6 @@ class LinkedList:
         temp = self.head
         while (temp.next.next != None):
             temp = temp.next
-        print(temp.next.value)
         val = temp.next.value
         temp.next = None
 
